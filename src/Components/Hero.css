@@ -1,0 +1,38 @@
+body {
+    background-color: #000; /* Set the body background to black for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .macbook-text {
+    font-size: 4rem;
+    position: absolute;
+    font-weight: bold;
+    top: 0;
+    left: 35%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff6b6b, #ff4757, #ffa502, #3742fa, #2f3542);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 3s infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
